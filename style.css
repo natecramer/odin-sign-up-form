@@ -115,3 +115,34 @@ input:focus {
     box-shadow: 90px;
     border: 1px solid blue;
 }
+
+input:invalid {
+    border: 1px solid red;
+}
+
+#createAccountBtn {
+    background: #596d48;
+    border-radius: 8px;
+    width: 230px;
+    height: 50px;
+    color:beige;
+    font-size: 120%;
+    font-weight: bold;
+    border: 0;
+    margin: 3.5% 5%;
+}
+
+#alreadyHaveAccount {
+    font-size: 120%;
+    display: flex;
+    /* flex-direction: column; */
+    margin: 0 5%;
+}
+
+#logInLink,
+#logInLink:visited {
+    color: #596d48;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+}

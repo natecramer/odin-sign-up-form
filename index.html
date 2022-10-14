@@ -28,11 +28,11 @@
                     <div id="formFields">
                         <div class="field">
                             <label for="firstName">FIRST NAME</label>
-                            <input type="text" name="firstName">
+                            <input type="text" name="firstName" minlength="1">
                         </div>
                         <div class="field">
                             <label for="lastName">LAST NAME</label>
-                            <input type="text" name="lastName">
+                            <input type="text" name="lastName" minlength="1">
                         </div>
 
                         <div class="field">
@@ -41,21 +41,25 @@
                         </div>
                         <div class="field">
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="text" name="phone">
+                            <input type="text" name="phone" pattern="[0-9]?-?[0-9]{3}-?[0-9]{4}">
                         </div>
 
                         <div class="field">
                             <label for="userPassword">PASSWORD</label>
-                            <input type="password" name="userPassword">
+                            <input type="password" name="userPassword" minlength="5">
                         </div>
                         <div class="field">
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirmPassword">
+                            <input type="password" name="confirmPassword" minlength="5">
                         </div>
                     </div>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" id="createAccountBtn">Create Account</button>
             </form>
+
+            <div id="alreadyHaveAccount">
+                Already have an account? <a id="logInLink" href="./index.html">Log in</a>
+            </div>
 
         </div>
     </div>

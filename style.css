@@ -1,0 +1,52 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.wrapper, html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    border: 1px solid black;
+    flex: 1 0 auto;
+    align-items: stretch;
+    height: 100%;
+    width: 100%;
+}
+
+#hero {
+    background-image: url("./mathias-reding-IEpyWlEEoQ4-unsplash.jpg");
+    color:antiquewhite;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    width: 30%;
+    height: 100%;
+}
+
+#hero a {
+    color: antiquewhite;
+    /* text-decoration: none; */
+}
+
+#heroBanner {
+    font-size: 48pt;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    /* opacity: 50%; */
+}
+
+/* #heroBannerText {
+    opacity: 100%;
+} */
+
+#formContainer {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    background-color: wheat;
+}

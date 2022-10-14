@@ -10,18 +10,51 @@
 <body>
     <div id="main">
         <div id="hero">
-            Hero
             <div id="heroBanner">
-                <div id="heroBannerText">Odin</div>
+                <div id="heroBannerText">👴 ODIN</div>
             </div>
             <div id="heroImageCredit">Photo by <a href="https://unsplash.com/@matreding">Mathias Reding</a> on <a href="https://unsplash.com/">Unsplash</a></div>
         </div>
         <div id="formContainer">
-            
+            <div id="introContainer">
+                <p>
+                This is not a real online service. Have you ever wondered what could be possible, if only you could unlock your true potential?
+                </p>
+                <p>Sign up <em>now</em> to get started today.</p>
+            </div>
+
             <form>
-                <label for="firstName">First name:</label>
-                <input type="text" name="firstName">
+                <div id="formFieldsContainer">
+                    <div class="field">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="firstName">
+                    </div>
+                    <div class="field">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="lastName">
+                    </div>
+
+                    <div class="field">
+                        <label for="mail">EMAIL</label>
+                        <input type="email" name="mail">
+                    </div>
+                    <div class="field">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="text" name="phone">
+                    </div>
+
+                    <div class="field">
+                        <label for="userPassword">PASSWORD</label>
+                        <input type="password" name="userPassword">
+                    </div>
+                    <div class="field">
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmPassword">
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
             </form>
+
         </div>
     </div>
 </body>

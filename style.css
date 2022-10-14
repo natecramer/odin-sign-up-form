@@ -26,6 +26,7 @@
     flex: 0 0 auto;
     width: 30%;
     height: 100%;
+    justify-content: space-between;
 }
 
 #hero a {
@@ -37,16 +38,63 @@
     font-size: 48pt;
     text-align: center;
     background-color: rgba(0,0,0,0.5);
+    margin-top: 25%;
     /* opacity: 50%; */
+}
+
+#heroImageCredit {
+    text-align: center;
+    margin-bottom: 2.5%;
 }
 
 /* #heroBannerText {
     opacity: 100%;
 } */
 
+#introContainer {
+    font-weight: bold;
+    font-size: 18pt;
+    margin: 10% 5% 0 5%;
+}
+
 #formContainer {
     height: 100%;
     display: flex;
     flex: 1;
+    flex-direction: column;
     background-color: wheat;
+    align-items: stretch;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#formFieldsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    /* border: 1px solid blue; */
+    margin: 10px;
+}
+
+input {
+    border-radius: 4px;
+    height: 25px;
+    width: 80%;
+}
+
+input:active {
+    box-shadow: 90px;
+    border: 2px solid blue;
 }

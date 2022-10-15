@@ -31,8 +31,9 @@ password.addEventListener('change', evalPassword);
 confirmPassword.addEventListener('change', evalPassword);
 
 function trySubmit() {
-    if (checkPasswordsMatch())
-        document.querySelector('form').submit();
+    // if (checkPasswordsMatch())
+    //     document.querySelector('form').submit();
+    checkPasswordsMatch();
 }
 
 document.querySelector('#createAccountBtn').addEventListener('click', trySubmit);

@@ -18,8 +18,11 @@
     width: 100%;
 }
 
+/* Photo credit: Mathias Reding
+   https://unsplash.com/photos/IEpyWlEEoQ4
+*/
 #hero {
-    background-image: url("./mathias-reding-IEpyWlEEoQ4-unsplash.jpg");
+    background-image: url("./mathias-reding-unsplash-cropped.jpg");
     /* background-size: 900%; */
     /* background-position: 55% 50%; */
     color:antiquewhite;

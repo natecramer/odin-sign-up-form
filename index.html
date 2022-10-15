@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Sign-up</title>
 </head>
 <body>
@@ -20,10 +21,10 @@
                 <p>
                 This is not a real online service. Have you ever wondered what could be possible, if only you could unlock your true potential?
                 </p>
-                <p>Sign up <em>now</em> to get started today.</p>
+                <p>Sign up <em>now</em> and get started today.</p>
             </div>
 
-            <form>
+            <form method="post">
                 <div id="formFieldsContainer">
                     <div id="formFields">
                         <div class="field">
@@ -46,15 +47,17 @@
 
                         <div class="field">
                             <label for="userPassword">PASSWORD</label>
-                            <input type="password" name="userPassword" minlength="5">
+                            <input type="password" name="userPassword" minlength="5" id="userPassword">
+                            <p id="passwordErrorText"></p>
                         </div>
                         <div class="field">
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirmPassword" minlength="5">
+                            <input type="password" name="confirmPassword" minlength="5" id="confirmPassword">
                         </div>
                     </div>
                 </div>
-                <button type="submit" id="createAccountBtn">Create Account</button>
+
+                <button type="button" id="createAccountBtn">Create Account</button>
             </form>
 
             <div id="alreadyHaveAccount">

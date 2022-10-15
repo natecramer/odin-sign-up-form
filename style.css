@@ -20,6 +20,8 @@
 
 #hero {
     background-image: url("./mathias-reding-IEpyWlEEoQ4-unsplash.jpg");
+    /* background-size: 900%; */
+    /* background-position: 55% 50%; */
     color:antiquewhite;
     display: flex;
     flex-direction: column;
@@ -78,6 +80,8 @@ form {
     flex-wrap: wrap;
     background-color: white;
     width: 100%;
+    color: rgb(49, 49, 49);
+    padding: 40px 0;
 }
 
 #formFields {
@@ -112,12 +116,16 @@ input {
 
 input:focus {
     outline: none;
-    box-shadow: 90px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border: 1px solid blue;
 }
 
 input:invalid {
     border: 1px solid red;
+}
+
+label {
+    font-size: 10pt;
 }
 
 #createAccountBtn {
@@ -130,6 +138,13 @@ input:invalid {
     font-weight: bold;
     border: 0;
     margin: 3.5% 5%;
+    transition: 100ms;
+}
+
+#createAccountBtn:hover {
+    background: #415034;
+    border: 2px solid white;
+    /* outline: 4px solid black; */
 }
 
 #alreadyHaveAccount {
@@ -145,4 +160,15 @@ input:invalid {
     font-weight: bold;
     text-decoration: none;
     margin-left: 5px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+#passwordErrorText {
+    font-size: 10pt;
+    color: red;
+    font-style: italic;
+    margin: 0;
 }
